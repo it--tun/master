@@ -1,0 +1,22 @@
+"--------------------------------------------------------------------------------
+"初期設定
+"--------------------------------------------------------------------------------
+"フォント設定
+set guifontwide=Osaka:h12
+set guifont=Osaka-Mono:h14
+
+"全角スペースを視覚化
+highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=#666666
+au BufNewFile,BufRead * match ZenkakuSpace /　/
+
+"常にタブを表示
+set showtabline=2
+
+"透明度を変更
+set transparency=3
+map gw :macaction selectNextWindow:
+map gW :macaction selectPreviousWindow:
+
+"配色設定
+colorscheme desert
+
